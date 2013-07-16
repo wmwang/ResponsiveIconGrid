@@ -20,7 +20,7 @@
 .cbp-ig-grid:before, 
 .cbp-ig-grid:after { 
 	content: " "; 
-	display: table; 
+	display: inline; 
 }
 
 .cbp-ig-grid:after { 
@@ -56,13 +56,17 @@
 	transition: background 0.2s;
 }
 
+.cbp-ig-grid li > a img{
+	height: 14em;	
+	}
+
 /* the icon with pseudo class for icon font */
 .cbp-ig-icon {
 	padding: 30px 0 0 0;
 	display: block;
-	-webkit-transition: -webkit-transform 100s;
-	transition: -moz-transform 100s;
-	transition: transform 100s;
+	-webkit-transition: -webkit-transform 0.2s;
+	transition: -moz-transform 0.2s;
+	transition: transform 0.2s;
 }
 
 .cbp-ig-icon:before {
@@ -107,9 +111,9 @@
 	padding: 20px 0 0 0;
 	font-size: 2em;
 	position: relative;
-	-webkit-transition: -webkit-transform 10s;
-	-moz-transition: -moz-transform 10s;
-	transition: transform 10s;
+	-webkit-transition: -webkit-transform 0.2s;
+	-moz-transition: -moz-transform 0.2s;
+	transition: transform 0.2s;
 }
 
 .cbp-ig-grid .cbp-ig-title:before {
@@ -121,9 +125,9 @@
 	top: 0px;
 	left: 50%;
 	margin: -10px 0 0 -80px;
-	-webkit-transition: margin-top 10s; /* top or translate does not seem to work in Firefox */
-	-moz-transition: margin-top 10s;
-	transition: margin-top 10s;
+	-webkit-transition: margin-top 0.2s; /* top or translate does not seem to work in Firefox */
+	-moz-transition: margin-top 0.2s;
+	transition: margin-top 0.2s;
 }
 
 .cbp-ig-grid .cbp-ig-category {
@@ -137,9 +141,9 @@
 	-ms-transform: -ms-translateY(10px);
 	transform: translateY(10px);
 	opacity: 0;
-	-webkit-transition: -webkit-transform 0.3s, opacity 10s;
-	-moz-transition: -moz-transform 0.3s, opacity 10s;
-	-webkit-transition: transform 0.3s, opacity 10s;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+	-webkit-transition: transform 0.3s, opacity 0.2s;
 }
 
 .cbp-ig-grid li:hover .cbp-ig-category,
